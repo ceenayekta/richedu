@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './test.css'
+import ArrowButton from './components/Buttons/ArrowButton'
+import CollapseButton from './components/Buttons/CollapseButton'
+import CloseButton from './components/Buttons/CloseButton'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    window.addEventListener("scroll", () => {
+        console.log(window.scrollX);
+        window.scrollX = 1000;
+    } )
+
+    return (
+    <>
+        <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
+        <div id="container">
+            <header></header>
+            <main></main>
+            <footer></footer>
+        </div>
+        <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/>
+    </>
+    )
 }
 
-export default App;
+export default App

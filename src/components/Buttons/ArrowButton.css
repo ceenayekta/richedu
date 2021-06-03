@@ -1,0 +1,43 @@
+.arrowCon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.arrowCon:hover {
+    transform: scale(1.1) rotate(45deg);
+}
+.icons {
+    align-self: center;
+    height: 80%;
+    width: 80%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* --------------------------------------------------- */
+
+
+#leftArrowParent, #rightArrowParent{
+    top: calc(50vh - 50px);
+    position: fixed;
+    z-index: 1000;
+}
+#leftArrowParent {
+    left: 20px;
+}
+#rightArrowParent{
+    right: 20px;
+}
+#rightArrowIcon {
+    transform: rotate(135deg);
+}
+#leftArrowIcon {
+    transform: rotate(-45deg);
+}

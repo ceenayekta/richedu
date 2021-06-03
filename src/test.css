@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+@keyframes moveDiv {
+    from {left: 0px}
+    to {left: -2000px}
+}
+#container {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: row;
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+}
+footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}

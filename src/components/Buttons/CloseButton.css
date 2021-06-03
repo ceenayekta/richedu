@@ -1,0 +1,35 @@
+.closeCon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* .btnContainer:hover {
+    transform: rotate(90deg);
+} */
+.icons {
+    align-self: center;
+    height: 80%;
+    width: 80%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* --------------------------------------------------- */
+
+
+#closeIcon {
+    transform: rotate(45deg);
+}
+.closeCon:hover {
+    transform: rotate(135deg);
+}
+.closeCon:hover #closeIcon{
+    transform: rotate(-135deg);
+}

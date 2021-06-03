@@ -1,0 +1,34 @@
+.collapseCon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.collapseCon:hover {
+    transform: rotate(-135deg)
+}
+.icons {
+    align-self: center;
+    height: 80%;
+    width: 80%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* --------------------------------------------------- */
+
+
+#collapseIcon {
+    position: inherit;
+    bottom: 7px;
+    right: 7px;
+    height: 60%;
+    width: 60%;
+    transform: rotate(135deg);
+}
