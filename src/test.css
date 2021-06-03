@@ -1,11 +1,14 @@
+:root {
+    --tomato-red: #D64045;
+    --light-cyan: #E9FFF9;
+    --powder-blue: #9ED8DB;
+    --queen-blue: #467599;
+    --prussian-blue: #1D3354;
+}
 body {
     margin: 0;
     height: 100vh;
     overflow-y: hidden;
-}
-@keyframes moveDiv {
-    from {left: 0px}
-    to {left: -2000px}
 }
 #container {
     height: 100vh;
@@ -21,16 +24,17 @@ body {
     display: none;
 } */
 header {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--tomato-red);
 }
 main {
     height: 100vh;
     width: 100vw;
+    background-color: var(--powder-blue);
 }
 footer {
     height: 100vh;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--prussian-blue);
 }

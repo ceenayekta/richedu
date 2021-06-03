@@ -7,7 +7,6 @@ import CloseButton from './components/Buttons/CloseButton'
 const App = () => {
     window.addEventListener("scroll", () => {
         console.log(window.scrollX);
-        window.scrollX = 1000;
     } )
 
     return (
