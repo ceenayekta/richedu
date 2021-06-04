@@ -1,23 +1,26 @@
 import React from 'react'
 import './test.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import ArrowButton from './components/Buttons/ArrowButton'
-import CollapseButton from './components/Buttons/CollapseButton'
 import CloseButton from './components/Buttons/CloseButton'
 
+import { Button } from 'bootstrap'
+import Footer from './components/footer/Footer';
+import { Nav, Navbar } from 'react-bootstrap'
+
 const App = () => {
-    window.addEventListener("scroll", () => {
-        console.log(window.scrollX);
-    } )
 
     return (
     <>
-        <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
+        {/* <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
         <div id="container">
             <header></header>
             <main></main>
             <footer></footer>
         </div>
-        <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/>
+        <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/> */}
+            <Footer />
     </>
     )
 }
