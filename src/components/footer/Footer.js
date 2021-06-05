@@ -8,7 +8,7 @@ const Footer = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <footer className="footer">  
+        <div className="footer w-100">  
             <Collapse in={open}>
                 <div id="example-collapse-text">
                     <div className="copyRight">
@@ -42,7 +42,7 @@ const Footer = () => {
                     />
                 </Navbar.Brand>
             </Navbar>
-        </footer>
+        </div>
     )
 }
 
