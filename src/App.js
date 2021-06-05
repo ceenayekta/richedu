@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './test.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,6 +20,17 @@ import Footer from './components/footer/Footer';
 import { Nav, Navbar } from 'react-bootstrap'
 
 const App = () => {
+
+    const [offsetX, setOffsetX] = useState(0);
+    const handleScroll = () => setOffsetX(window.pageXOffset);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
+    
+
     return (
     <>
         <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
