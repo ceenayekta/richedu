@@ -6,7 +6,7 @@ import girlPic from './images/girl.png'
 import boyPic from './images/boy.png'
 import shuttlePic from './images/Shuttle.svg'
 import worldPic from './images/connected_world.svg'
-import rockPic from './images/rock.svg'
+import stone from './images/stone.svg'
 import astroidPic from './images/asteroid.svg'
 import earth from './images/earth.svg'
 import moon from './images/moon.svg'
@@ -20,16 +20,18 @@ import Tab from './components/Tabs/Tab'
 import { Nav, Navbar } from 'react-bootstrap'
 
 import data from './data/data.json'
+import Card from './components/cards/Card'
+import Space from './components/space/Space'
 
 const App = () => {
 
-    // const [offsetX, setOffsetX] = useState(0);
-    // const handleScroll = () => setOffsetX(window.pageXOffset);
-    // useEffect(() => {
-    //     window.addEventListener("scroll", handleScroll);
+    const [offsetX, setOffsetX] = useState(0);
+    const handleScroll = () => setOffsetX(window.pageXOffset);
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
 
-    //     return () => window.removeEventListener("scroll", handleScroll)
-    // }, [])
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     const [openTeam, setOpenTeam] = useState(false);
     const [openAbout, setOpenAbout] = useState(false);
@@ -42,10 +44,13 @@ const App = () => {
         <Tab open={openAbout} setOpen={setOpenAbout} title={data.tabsContent.about.title} text={data.tabsContent.about.text}/>
         <Tab open={openContact} setOpen={setOpencontact} title={data.tabsContent.contact.title} text={data.tabsContent.contact.text}/>
         <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
-        <div id="container">
-            <header></header>
+        <div id="container" className="px-5">
+            {/* <header></header>
             <main></main>
-            <footer></footer>
+            <footer></footer> */}
+
+            {/* <Card offsetX={offsetX}/> */}
+            <Space offsetX={offsetX} />
         </div>
         <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/>
         <Footer team={setOpenTeam} about={setOpenAbout} contact={setOpencontact} data={data}/>
