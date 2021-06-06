@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './test.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import girlPic from './images/girl.png'
 import boyPic from './images/boy.png'
@@ -15,24 +15,32 @@ import jupiter from './images/jupiter.svg'
 
 import ArrowButton from './components/Buttons/ArrowButton'
 import CloseButton from './components/Buttons/CloseButton'
-import { Button } from 'bootstrap'
-import Footer from './components/footer/Footer';
+import Footer from './components/Footer/Footer'
+import Tab from './components/Tabs/Tab'
 import { Nav, Navbar } from 'react-bootstrap'
+
+import data from './data/data.json'
 
 const App = () => {
 
-    const [offsetX, setOffsetX] = useState(0);
-    const handleScroll = () => setOffsetX(window.pageXOffset);
+    // const [offsetX, setOffsetX] = useState(0);
+    // const handleScroll = () => setOffsetX(window.pageXOffset);
+    // useEffect(() => {
+    //     window.addEventListener("scroll", handleScroll);
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll)
+    // }, [])
 
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+    const [openTeam, setOpenTeam] = useState(false);
+    const [openAbout, setOpenAbout] = useState(false);
+    const [openContact, setOpencontact] = useState(false);
     
 
     return (
     <>
+        <Tab open={openTeam} setOpen={setOpenTeam} title={data.tabsContent.team.title} text={data.tabsContent.team.text}/>
+        <Tab open={openAbout} setOpen={setOpenAbout} title={data.tabsContent.about.title} text={data.tabsContent.about.text}/>
+        <Tab open={openContact} setOpen={setOpencontact} title={data.tabsContent.contact.title} text={data.tabsContent.contact.text}/>
         <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
         <div id="container">
             <header></header>
@@ -40,7 +48,7 @@ const App = () => {
             <footer></footer>
         </div>
         <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/>
-            <Footer />
+        <Footer team={setOpenTeam} about={setOpenAbout} contact={setOpencontact} data={data}/>
     </>
     )
 }
