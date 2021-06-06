@@ -4,7 +4,7 @@ import CollapseButton from '../Buttons/CollapseButton'
 import logo from '../../images/logo.png'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({ team, about, contact }) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -16,11 +16,11 @@ const Footer = () => {
                     </div>
                 </div>
             </Collapse>
-            <Navbar className="wrap position-relative">
+            <Navbar className="wrap position-relative px-5">
                 <Nav>
-                    <Nav.Link href="#team">Our Team</Nav.Link>
-                    <Nav.Link href="#about">About Us</Nav.Link>
-                    <Nav.Link href="#contact">Contact Us</Nav.Link>
+                    <Nav.Link href="#team" onClick={() => team(true)}>Our Team</Nav.Link>
+                    <Nav.Link href="#about" onClick={() => about(true)}>About Us</Nav.Link>
+                    <Nav.Link href="#contact" onClick={() => contact(true)}>Contact Us</Nav.Link>
                 </Nav>
                 
                 <div 
@@ -32,7 +32,7 @@ const Footer = () => {
                     <CollapseButton />
                 </div>
 
-                <Navbar.Brand href="#home" className="ml-auto">
+                <Navbar.Brand href="#home" className="ml-auto mr-0">
                     <img
                         src={logo}
                         width="100"

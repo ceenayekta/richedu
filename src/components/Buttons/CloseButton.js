@@ -2,10 +2,10 @@ import React from 'react'
 import { CgClose } from 'react-icons/cg'
 import './CloseButton.css'
 
-const CloseButton = () => {
+const CloseButton = ({ onClick, className }) => {
     return (
-        <div className="closeCon">
-            <CgClose id="closeIcon" className="icons"/>
+        <div className={`closeCon ${className}`} onClick={onClick}>
+            <CgClose id="closeIcon" className={`${className} icons`}/>
         </div>
     )
 }
