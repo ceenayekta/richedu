@@ -12,5 +12,23 @@
             "title": "Contact Us",
             "text": "Join us now!"
         }
-    }
+    },
+    "cardsContent": [
+        {
+            "title": "Our Magical World Is Brewing",
+            "text": "Get ready we have something coming that is going to blow you away. Below is a sneak peek of what we offer. Check back often for our launch."
+        },
+        {
+            "title": "We Are Growing",
+            "text": "Currently, our worldwide family has reached +35 members and it's going on."
+        },
+        {
+            "title": "Gamifying assignment",
+            "text": "We provide gamified assignments to interact students, as well as blockchain games. We won't let you get bored."
+        },
+        {
+            "title": "Mentorship Proccess",
+            "text": "By joining us, you will be receiving mentorship and advice from team leads."
+        }
+    ]
 }

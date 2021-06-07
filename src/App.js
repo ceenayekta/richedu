@@ -49,8 +49,8 @@ const App = () => {
             <main></main>
             <footer></footer> */}
 
-            {/* <Card offsetX={offsetX}/> */}
-            <Space offsetX={offsetX} />
+            <Card offsetX={offsetX} data={data.cardsContent}/>
+            {/* <Space offsetX={offsetX} /> */}
         </div>
         <ArrowButton id="rightArrowIcon" parentId="rightArrowParent"/>
         <Footer team={setOpenTeam} about={setOpenAbout} contact={setOpencontact} data={data}/>
