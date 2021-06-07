@@ -2,17 +2,41 @@ import React from 'react'
 
 import './Card.css'
 
-import image from '../../images/boy.png'
+import magical from '../../images/magical.png'
+import member from '../../images/member.png'
+import gamified from '../../images/gamified.png'
+import mentor from '../../images/mentor.png'
 
 const card = ({ title, text, offsetX, data }) => {
+
+    const getImage = (imageName) => {
+        switch (imageName) {
+            case "magical":
+                return magical;
+        
+            case "member":
+                return member;
+    
+            case "gamified":
+                return gamified;
+            
+            case "mentor":
+                return mentor;
+        
+            default:
+                break;
+        }
+    }
     
     const cards = data.map((card, index) => 
-        <div key={index} className="d-flex justify-content-center align-items-center flex-row">
-            <div>
+        <div key={index} className="card">
+            <div className="content-wrapper">
                 <h2 style={{ transform: `translateX(${offsetX * -0.4}px)` }}>{card.title}</h2>
-                <p style={{ transform: `translateX(${offsetX * -0.4}px)` }}>{card.text}</p>
+                <p className="mt-5" style={{ transform: `translateX(${offsetX * -0.4}px)` }}>{card.text}</p>
             </div>
-            <img alt="" src={image} width="600" height="400" style={{ transform: `translateX(${offsetX * -0.1}px)` }}/>
+            <div className="card-img">
+                <img alt="" src={getImage(card.image)} style={{ transform: `translateX(${offsetX * -0.35}px)` }}/>
+            </div>
         </div>
     )
 

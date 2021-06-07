@@ -16,19 +16,23 @@
     "cardsContent": [
         {
             "title": "Our Magical World Is Brewing",
-            "text": "Get ready we have something coming that is going to blow you away. Below is a sneak peek of what we offer. Check back often for our launch."
+            "text": "Get ready we have something coming that is going to blow you away. Below is a sneak peek of what we offer. Check back often for our launch.",
+            "image": "magical"
         },
         {
             "title": "We Are Growing",
-            "text": "Currently, our worldwide family has reached +35 members and it's going on."
+            "text": "Currently, our worldwide family has reached +35 members and it's increasing.",
+            "image": "member"
         },
         {
-            "title": "Gamifying assignment",
-            "text": "We provide gamified assignments to interact students, as well as blockchain games. We won't let you get bored."
+            "title": "Gamifying Assignment",
+            "text": "We provide gamified assignments to interact students, as well as blockchain games. We won't let you get bored.",
+            "image": "gamified"
         },
         {
             "title": "Mentorship Proccess",
-            "text": "By joining us, you will be receiving mentorship and advice from team leads."
+            "text": "By joining us, you will be receiving mentorship and advice from team leads.",
+            "image": "mentor"
         }
     ]
 }

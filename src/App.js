@@ -3,7 +3,7 @@ import './test.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import girlPic from './images/girl.png'
-import boyPic from './images/boy.png'
+import boyPic from './images/gamified.png'
 import shuttlePic from './images/Shuttle.svg'
 import worldPic from './images/connected_world.svg'
 import stone from './images/stone.svg'
@@ -14,10 +14,8 @@ import saturn from './images/saturn.svg'
 import jupiter from './images/jupiter.svg'
 
 import ArrowButton from './components/Buttons/ArrowButton'
-import CloseButton from './components/Buttons/CloseButton'
 import Footer from './components/Footer/Footer'
 import Tab from './components/Tabs/Tab'
-import { Nav, Navbar } from 'react-bootstrap'
 
 import data from './data/data.json'
 import Card from './components/cards/Card'
@@ -44,7 +42,7 @@ const App = () => {
         <Tab open={openAbout} setOpen={setOpenAbout} title={data.tabsContent.about.title} text={data.tabsContent.about.text}/>
         <Tab open={openContact} setOpen={setOpencontact} title={data.tabsContent.contact.title} text={data.tabsContent.contact.text}/>
         <ArrowButton id="leftArrowIcon" parentId="leftArrowParent"/>
-        <div id="container" className="px-5">
+        <div id="container">
             {/* <header></header>
             <main></main>
             <footer></footer> */}

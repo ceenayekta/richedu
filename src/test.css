@@ -12,7 +12,7 @@ body {
 }
 #container {
     height: 100vh;
-    width: 600vw;
+    width: 400vw;
     background-image: linear-gradient(to right, 
         var(--rich-black), 
         var(--rich-black), 
@@ -22,6 +22,7 @@ body {
     left: 2000;
     flex-direction: row;
     transition: left 0.05s;
+    padding: 0 20vw;
     /* scrollbar-width: none;
     -ms-overflow-style: none;
 }
