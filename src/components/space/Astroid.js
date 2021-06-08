@@ -10,40 +10,40 @@ const Astroid = ({ offsetX }) => {
     const layers = {
         one: {
             translateX: offsetX*-1,
-            size: 100,
+            size: 50,
         },
         two: {
             translateX: offsetX*-2,
-            size: 200,
+            size: 100,
         },
         three: {
             translateX: offsetX*-3,
-            size: 300,
+            size: 150,
         },
         four: {
             translateX: offsetX*-4,
-            size: 400,
+            size: 200,
         }
     }
 
     return (
         <>
-            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translate(${layers.two.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translate(${layers.three.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translate(${layers.three.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translate(${layers.two.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.three.size} height={layers.three.size} style={{transform: `translate(${layers.three.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translate(${layers.two.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.three.size} height={layers.three.size} style={{transform: `translate(${layers.three.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translate(${layers.three.translateX}px)`}}/>    
-            <img alt="" src={stone} width={layers.two.size} height={layers.two.size} style={{transform: `translate(${layers.two.translateX}px)`}}/>    
-            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translate(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translateX(${layers.two.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translateX(${layers.three.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translateX(${layers.three.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translateX(${layers.two.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.three.size} height={layers.three.size} style={{transform: `translateX(${layers.three.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.two.size} height={layers.two.size} style={{transform: `translateX(${layers.two.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.three.size} height={layers.three.size} style={{transform: `translateX(${layers.three.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.three.size} height={layers.three.size} style={{transform: `translateX(${layers.three.translateX}px)`}}/>    
+            <img alt="" src={stone} width={layers.two.size} height={layers.two.size} style={{transform: `translateX(${layers.two.translateX}px)`}}/>    
+            <img alt="" src={astroid} width={layers.one.size} height={layers.one.size} style={{transform: `translateX(${layers.one.translateX}px)`}}/>    
         </>
     )
 }

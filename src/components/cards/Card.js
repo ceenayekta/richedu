@@ -7,7 +7,7 @@ import member from '../../images/member.png'
 import gamified from '../../images/gamified.png'
 import mentor from '../../images/mentor.png'
 
-const card = ({ title, text, offsetX, data }) => {
+const card = ({ offsetX, data }) => {
 
     const getImage = (imageName) => {
         switch (imageName) {
@@ -29,13 +29,13 @@ const card = ({ title, text, offsetX, data }) => {
     }
     
     const cards = data.map((card, index) => 
-        <div key={index} className="card">
+        <div key={index} className="card" style={{ transform: `translateX(${offsetX * -0.4}px)` }}>
             <div className="content-wrapper">
-                <h2 style={{ transform: `translateX(${offsetX * -0.4}px)` }}>{card.title}</h2>
-                <p className="mt-5" style={{ transform: `translateX(${offsetX * -0.4}px)` }}>{card.text}</p>
+                <h2>{card.title}</h2>
+                <p className="mt-5">{card.text}</p>
             </div>
-            <div className="card-img">
-                <img alt="" src={getImage(card.image)} style={{ transform: `translateX(${offsetX * -0.35}px)` }}/>
+            <div>
+                <img alt="" src={getImage(card.image)}/>
             </div>
         </div>
     )

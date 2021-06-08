@@ -3,16 +3,13 @@
     min-width: 60vw;
     height: fit-content;
     border: none;
-    margin-right: 35vw;
+    margin-right: 70vw;
     color: #fff;
-}
-
-.content-wrapper {
-    width: 500px;
-    margin-top: 20vh;
+    position: relative;
     z-index: 10;
 }
 
-.card-img {
-    z-index: 5;
+.content-wrapper {
+    width: 40vw;
+    margin-top: 20vh;
 }

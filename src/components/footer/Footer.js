@@ -11,16 +11,16 @@ const Footer = ({ team, about, contact }) => {
         <div className="footer w-100">  
             <Collapse in={open}>
                 <div id="example-collapse-text">
-                    <div className="copyRight">
-                        {/* later: right sth */}
+                    <div className="copyRight d-flex justify-content-center align-items-center">
+                        Developed By Sina Aghdasi © 2021
                     </div>
                 </div>
             </Collapse>
             <Navbar className="wrap position-relative px-5">
                 <Nav>
-                    <Nav.Link href="#team" onClick={() => team(true)}>Our Team</Nav.Link>
-                    <Nav.Link href="#about" onClick={() => about(true)}>About Us</Nav.Link>
-                    <Nav.Link href="#contact" onClick={() => contact(true)}>Contact Us</Nav.Link>
+                    <Nav.Link href="#team" onClick={() => team(true)} style={{color: "#352E7E"}}>Our Team</Nav.Link>
+                    <Nav.Link href="#about" onClick={() => about(true)} style={{color: "#352E7E"}}>About Us</Nav.Link>
+                    <Nav.Link href="#contact" onClick={() => contact(true)} style={{color: "#352E7E"}}>Contact Us</Nav.Link>
                 </Nav>
                 
                 <div 

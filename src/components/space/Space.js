@@ -1,10 +1,13 @@
 import React from 'react'
 
 import Astroid from './Astroid'
+import Planets from './Planets'
+
 const Space = ({ offsetX }) => {
     return (
-        <div>
-            <Astroid offsetX={offsetX}/>
+        <div className="w-100 position-absolute">
+            {/* <Astroid offsetX={offsetX}/> */}
+            <Planets offsetX={offsetX}/>
         </div>
     )
 }
