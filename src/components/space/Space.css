@@ -1,0 +1,36 @@
+.saturn {
+  position: absolute;
+  z-index: 1;
+  left: -15vw;
+  top: 10vh;
+  width: 120px;
+  height: 120px;
+  margin-left: 0;
+}
+.jupiter {
+  position: absolute;
+  z-index: 1;
+  left: 110vw;
+  top: 50vh;
+  width: 340px;
+  height: 340px;
+  margin-left: 0;
+}
+.moon {
+  position: absolute;
+  z-index: 1;
+  left: 250vw;
+  top: 5vh;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+}
+.earth {
+  position: absolute;
+  z-index: 1;
+  left: 360vw;
+  top: 20vh;
+  width: 130px;
+  height: 130px;
+  margin-left: 0;
+}

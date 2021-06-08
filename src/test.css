@@ -9,57 +9,26 @@ body {
     margin: 0;
     height: 100vh;
     overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 #container {
     height: 100vh;
-    width: 500vw;
+    width: 300vw;
     background-image: linear-gradient(to right, 
         var(--rich-black), 
         var(--rich-black), 
         var(--midnight-green), 
         var(--teal-blue));
     display: flex;
-    left: 2000;
     flex-direction: row;
     transition: left 0.05s;
     padding: 0 20vw;
-    /* scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
-    display: none; */
+    display: none;
 }
 
-
-
-header {
-    height: 100%;
-    width: 100vw;
-    background-color: var(--tomato-red);
-}
-main {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--powder-blue);
-}
-footer {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--prussian-blue);
+@media screen and (max-width: 600px) {
 }
 
-.layer1 {
-    position: absolute;
-    z-index: 100;
-    left: 100;
-}
-.layer2 {
-    position: absolute;
-    z-index: 200;
-    left: 200;
-}
-.layer3 {
-    position: absolute;
-    z-index: 300;
-    left: 300;
-}

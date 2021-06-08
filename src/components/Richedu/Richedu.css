@@ -1,0 +1,18 @@
+.Richedu {
+  width: 100vw;
+  height: 100vh;
+}
+.richedu {
+  width: 90vw;
+  height: 64.47vw;
+  max-width: 698px;
+  max-height: 500px;
+  position: absolute;
+  left: calc(280vw - 698px);
+  margin: 20vh 20vw 0 0;
+}
+@media screen and (max-width: 1080px) {
+  .richedu {
+    left: 200vw;
+  }
+}
